@@ -13,12 +13,12 @@ function view(dispatch, model) {
             div({ className: 'f-subheadline lh-title' }, `Count: ${model}`),
             a(
                 {
-                    className: 'f6 link dim ba ph3 pv2 mb2 dib dark-green mr2',
+                    className: 'f6 link dim ba ph3 pv2 mb2 dib dark-green grow pointer mr4',
                     onclick: () => dispatch(MSGS.ADD)
                 }, '+'),
             a(
                 {
-                    className: 'f6 link dim ba ph3 pv2 mb2 dib dark-pink',
+                    className: 'f6 link dim ba ph3 pv2 mb2 dib dark-pink grow pointer',
                     onclick: () => dispatch(MSGS.SUBTRACT)
                 }, '-')
         ]
