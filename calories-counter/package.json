@@ -1,0 +1,32 @@
+{
+  "name": "calories-counter",
+  "version": "1.0.0",
+  "description": "Simple Calories Counting Application",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Herbert Kagumba",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^4.19.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.8.2",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
+    "ramda": "^0.25.0",
+    "virtual-dom": "^2.1.1"
+  }
+}
