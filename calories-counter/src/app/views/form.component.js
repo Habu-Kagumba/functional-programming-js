@@ -44,8 +44,8 @@ function buttonSet(dispatch) {
         ]);
 }
 
-function formComponent(dispatch, model) {
-    const { description, calories, showForm } = model;
+function formComponent(dispatch, state) {
+    const { description, calories, showForm } = state;
 
     if (showForm) {
         return form(

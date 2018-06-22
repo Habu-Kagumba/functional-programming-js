@@ -61,7 +61,7 @@ function mealTableFooter(meals) {
         { className: 'washed-yellow bg-purple f1 lh-title' },
         [
             td({ className: 'tl pa3' }, 'Total:'),
-            td({ className: 'tr pa3' }, total),
+            td({ className: 'tr pa3' }, `${total} kcal`),
             td()
         ]
     );
