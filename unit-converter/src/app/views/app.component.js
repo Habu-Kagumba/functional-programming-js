@@ -12,9 +12,9 @@ export function appComponent(dispatch, state) {
             'Unit Converter'
         ),
         converterComponent(dispatch, state),
-        // pre(
-        //     { className: 'fixed top-0 left-1 bg-washed-yellow dark-pink pa3' },
-        //     JSON.stringify(state, null, 2)
-        // )
+        pre(
+            { className: 'fixed top-0 left-1 bg-washed-yellow dark-pink pa3' },
+            JSON.stringify(state, null, 2)
+        )
     ]);
 }
