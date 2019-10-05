@@ -1,6 +1,7 @@
-const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
     mode: 'development',
@@ -13,23 +14,14 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['babel-preset-env'],
-                        plugins: [require('babel-plugin-transform-object-rest-spread')]
-                    }
-                }
-            }
+            { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new webpack.ProgressPlugin(),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Simple Calories Counting Application',
+            title: 'Calorie Counter',
             template: 'index.html'
         })
     ],
